@@ -1,4 +1,5 @@
 
+    
 var albumPicasso = {
     name: 'The Colors',
     artist: 'Pablo Picasso',
@@ -13,6 +14,7 @@ var albumPicasso = {
         { name: 'Magenta', length: 374.22, audioUrl: 'assets/music/bloc_jams_music/magenta' }
     ]
 };
+
 
 var albumMarconi = {
     name: 'The Telephone',
