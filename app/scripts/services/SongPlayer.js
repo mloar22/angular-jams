@@ -14,7 +14,7 @@
      var setSong = function (song) {
        if (currentBuzzObject) {
          currentBuzzObject.stop();
-         SongPlayer.currentSong.playing = null;
+         SongPlayer. currentSong.playing = null;
        }
 
        /**
@@ -27,7 +27,7 @@
          preload: true
        });
 
-       SongPlayer.currentSong = song;
+       SongPlayer. currentSong = song;
      };
      
           
@@ -44,11 +44,11 @@
 
 
      SongPlayer.play = function (song) {
-       if (SongPlayer.currentSong !== song) {
+       if (SongPlayer. currentSong !== song) {
          setSong(song);
          playSong();
 
-       } else if (SongPlayer.currentSong === song) {
+       } else if (SongPlayer. currentSong === song) {
          if (currentBuzzObject.isPaused()) {
            currentBuzzObject.play();
          }
