@@ -96,6 +96,24 @@
          playSong(song);
      }
      };
+               /**
+      * @function SongPlayer.next
+      * @desc goes to the next index item after currentSong in getSongIndex
+      * @param {Object} SongPlayer.CurrentSong
+      */
+     SongPlayer.next = function (){
+       var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+       currentSongIndex++;
+       
+       if (currentSongIndex < 0) {
+         currentBuzzObject.stop();
+         SongPlayer.currentSong.playing = null;
+       } else {
+         var song = currentAlbum.songs[currentSongIndex];
+         setSong(song);
+         playSong(song);
+       }
+     };
 
      return SongPlayer;
    }
