@@ -42,6 +42,7 @@
 
 .player-bar .main-controls .previous {
     margin-right: 16.5%;
+    padding-left: 1rem;
 }
 
 .player-bar .main-controls .play-pause {
