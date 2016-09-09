@@ -31,10 +31,10 @@
            scope.max = newValue;
          });
 
-         attributes.$observe('on-change', function (setCurrentTime) {
-           scope.value = setCurrentTime;
-
-         });
+//         attributes.$observe('on-change', function (setCurrentTime) {
+//           scope.value = setCurrentTime;
+//
+//         });
 
          var percentString = function () {
            var value = scope.value;
@@ -44,12 +44,12 @@
 
          };
 
-         //           
-         //           scope.thumbStyle = function () {
-         //             return {
-         //                position: percentString()
-         //             };
-         //           };
+                    
+                    scope.thumbStyle = function () {
+                      return {
+                         left: percentString()
+                      };
+                    };
 
 
          scope.fillStyle = function () {
