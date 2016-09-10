@@ -61,6 +61,10 @@
       */
      SongPlayer.currentTime = null;
      
+     
+     SongPlayer.volume = null;
+     
+     
      /**
      * @function setCurrentTime
      * @desc set the currnet time (in secconds) of current song.

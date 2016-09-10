@@ -31,11 +31,6 @@
            scope.max = newValue;
          });
 
-//         attributes.$observe('on-change', function (setCurrentTime) {
-//           scope.value = setCurrentTime;
-//
-//         });
-
          var percentString = function () {
            var value = scope.value;
            var max = scope.max;
